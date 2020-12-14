@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin-top: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+form {
+  margin-top: 30px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-left: 14%;
+}
+.bold {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+form .rates {
+  font-size: small;
+  margin-left: 22%;
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+form .box .rating {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  border: 1px solid #000;
+
+  height: 100%;
+  width: 77%;
+  clip-path: polygon(90% 28%, 95% 50%, 90% 72%, 10% 72%, 5% 50%, 10% 28%);
+}
+
+form .rating input {
+  display: none;
+}
+form .rating label {
+  display: block;
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background: #ccbebe;
+  color: #000;
+  font-size: 20px;
+  border-right: 1px solid #fff;
+}
+
+label.r2:hover ~ label.r1 {
+  background-color: #ee5a24;
+}
+label.r2:hover {
+  background-color: #ee5a24;
+}
+.r1:hover {
+  background-color: #f00;
+}
+label.r3:hover {
+  background-color: #ffa500;
+}
+label.r3:hover ~ .r2 {
+  background-color: #ffa500;
+}
+.r3:hover ~ .r1 {
+  background-color: #ffa500;
+}
+label.r4:hover {
+  background-color: #32cd32;
+}
+.r4:hover ~ .r3 {
+  background-color: #32cd32;
+}
+.r4:hover ~ .r2 {
+  background-color: #32cd32;
+}
+.r4:hover ~ .r1 {
+  background-color: #32cd32;
+}
+label.r5:hover {
+  background-color: #006400;
+}
+.r5:hover ~ .r4 {
+  background-color: #006400;
+}
+.r5:hover ~ .r3 {
+  background-color: #006400;
+}
+.r5:hover ~ .r2 {
+  background-color: #006400;
+}
+.r5:hover ~ .r1 {
+  background-color: #006400;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 1px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #078d07;
+  border: #078d07;
+  color: white;
+}
